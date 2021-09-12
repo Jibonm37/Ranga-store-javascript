@@ -68,11 +68,20 @@ const updateTaxAndCharge = () => {
   }
 };
 
-//grandTotal update function
+
+
+
+// grandTotal update function
 const updateTotal = () => {
+
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal;
 };
+// cart added massage ---
+ const addedCart = () => {
+   alert('Your Product is added to your Cart')
+ }
+
 loadProducts();
